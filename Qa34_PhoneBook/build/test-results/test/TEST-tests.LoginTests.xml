@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.LoginTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-06-22T17:54:27" hostname="VIKTOR" time="0.091">
+  <properties/>
+  <testcase name="loginNegativeTestWrongEmail" classname="tests.LoginTests" time="0.091">
+    <failure message="java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:94)
+	at tests.TestBase.type(TestBase.java:59)
+	at tests.TestBase.fillLoginRegistrationForm(TestBase.java:48)
+	at tests.LoginTests.loginNegativeTestWrongEmail(LoginTests.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 63300
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 22, 2022 8:54:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Jun 22, 2022 8:54:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 102
+]]></system-err>
+</testsuite>
