@@ -28,7 +28,7 @@ public class LoginTests extends TestBase {
     @Test
     public void loginNegativeTestWrongEmail() {
         app.getHelperUser().openLoginRegistrationForm();
-        app.getHelperUser().fillLoginRegistrationForm("noagmail.com", "Nnoa12345$");
+        app.getHelperUser().fillLoginRegistrationForm("viktorgmail.com", "Vviktor12345$");
         app.getHelperUser().submitLogin();
         //6 Assert(is login unsuccessful?) login present? NOT
         Assert.assertFalse(app.getHelperUser().isLogged());
