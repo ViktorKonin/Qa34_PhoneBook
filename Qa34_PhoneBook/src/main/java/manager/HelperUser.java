@@ -1,5 +1,6 @@
 package manager;
 
+import models.User;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -36,6 +37,10 @@ public class HelperUser extends HelperBase {
         //find+click+clear+sendKeys
         type(By.xpath("//input[2]"), password);
     }
+    public void fillLoginRegistrationForm(User user) {
+        type(By.xpath("//input[1]"), user.getEmail());
+        type(By.xpath("//input[2]"), user.getPassword());
+    }
 
     public boolean isLogged() {
         //sign out present? --> logged
@@ -49,7 +54,7 @@ public class HelperUser extends HelperBase {
 
     public boolean isAlertDisplayed() {
         //wait
-        Alert alert = new WebDriverWait(wd, Duration.ofSeconds(5)).until(ExpectedConditions.alertIsPresent());
+        Alert alert = new WebDriverWait(wd, Duration.ofSeconds(7)).until(ExpectedConditions.alertIsPresent());
         if (alert == null) {
             return false;
         } else {
@@ -70,6 +75,7 @@ public class HelperUser extends HelperBase {
         alert.accept();
 
 
-        return errorText.contains("Wromg email or password format");
+
+        return errorText.contains("Wrong email or password format");
     }
 }
