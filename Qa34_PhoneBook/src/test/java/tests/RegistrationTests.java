@@ -31,5 +31,17 @@ public class RegistrationTests extends TestBase{
         Assert.assertTrue(app.getHelperUser().isLogged());
     }
 
+    @Test
+    public void registrationNegativeTestWrongEmail() {
+        app.getHelperUser().openLoginRegistrationForm();
+        app.getHelperUser().fillLoginRegistrationForm("viktorgmail.com", "Vviktor12345$");
+        app.getHelperUser().submitRegistration();
+        //6 Assert(is login unsuccessful?) login present? NOT
+        Assert.assertFalse(app.getHelperUser().isLogged());
+        Assert.assertTrue(app.getHelperUser().isAlertDisplayed());
+        Assert.assertTrue(app.getHelperUser().isErrorFormatDisplayed());
+
+    }
+
 
 }

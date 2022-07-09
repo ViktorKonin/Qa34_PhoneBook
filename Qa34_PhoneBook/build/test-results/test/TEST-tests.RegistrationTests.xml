@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.RegistrationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-09T19:17:59" hostname="VIKTOR" time="1.035">
+  <properties/>
+  <testcase name="registrationNegativeTestWrongEmail" classname="tests.RegistrationTests" time="1.035"/>
+  <system-out><![CDATA[Wrong email or password format
+            Email must contains one @ and minimum 2 symbols after last dot
+            Password must contain at least one uppercase letter!
+            Password must contain at least one lowercase letter!
+            Password must contain at least one digit!
+            Password must contain at least one special symbol from [‘$’,’~’,’-‘,’_’]!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
