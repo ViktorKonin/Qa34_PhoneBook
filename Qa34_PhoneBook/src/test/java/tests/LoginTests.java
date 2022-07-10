@@ -15,7 +15,7 @@ public class LoginTests extends TestBase {
     }
 
     @Test
-    public static void successLogin() {
+    public  void successLogin() {
 
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm("viktor@gmail.com", "Vviktor12345$");
