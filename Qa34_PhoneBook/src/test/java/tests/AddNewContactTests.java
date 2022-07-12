@@ -3,7 +3,6 @@ package tests;
 import models.Contact;
 import models.User;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -18,7 +17,7 @@ public class AddNewContactTests extends TestBase {
         }
     }
 
-    @Test
+    @Test(invocationCount = 5)
     public void addNewContactSuccess() {
         Random random = new Random();
         int i = random.nextInt(1000) + 1000;
@@ -31,12 +30,14 @@ public class AddNewContactTests extends TestBase {
                 .address("Haifa, Israel")
                 .description("Friend")
                 .build();
+        System.out.println(contact);
 
         app.contact().openAddContactForm();
         app.contact().fillAddContactForm(contact);
         app.contact().SaveContact();
 
         Assert.assertTrue(app.contact().isContactAddedByName(contact.getName()));
+        Assert.assertTrue(app.contact().isContactAddedByPhone(contact.getPhone()));
     }
 
 

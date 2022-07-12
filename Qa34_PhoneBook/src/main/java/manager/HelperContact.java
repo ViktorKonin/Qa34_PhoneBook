@@ -4,6 +4,7 @@ import models.Contact;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.xml.sax.Locator;
 
 import java.util.List;
 
@@ -40,10 +41,29 @@ public class HelperContact extends HelperBase {
         List<WebElement> names = wd.findElements(By.cssSelector("h2"));
         for (WebElement el : names) {
             if (el.getText().equals(name)) {
-                System.out.println("True");
+                System.out.println("The name is found:" + el.getText());
                 return true;
             }
         }
         return false;
+    }
+
+    public boolean isContactAddedByPhone(String phone) {
+        List<WebElement> phones = wd.findElements(By.cssSelector("h3"));
+        for (WebElement el : phones) {
+            if (el.getText().equals(phone)) {
+                System.out.println("The phone number is found:" + el.getText());
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean elementIsFound(By locator) {
+        List<WebElement> elements = wd.findElements(locator);
+        if (elements.size() > 0) {
+            System.out.println("The number of contacts is: "+elements.size());
+            return true;
+        } else return false;
     }
 }

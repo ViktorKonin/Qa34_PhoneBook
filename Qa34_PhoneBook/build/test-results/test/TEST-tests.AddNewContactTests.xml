@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.AddNewContactTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-10T18:08:55" hostname="VIKTOR" time="2.798">
-  <properties/>
-  <testcase name="addNewContactSuccess" classname="tests.AddNewContactTests" time="2.798"/>
-  <system-out><![CDATA[True
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
