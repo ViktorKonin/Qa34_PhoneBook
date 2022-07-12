@@ -24,7 +24,7 @@ public class DeleteContactTests extends TestBase {
             app.contact().pause(500);
             app.contact().click(By.xpath("//*[text()='Remove']"));
             app.contact().pause(500);
-            System.out.println("1 is Delete");
+            System.out.println("1 is deleted");
         }
         Assert.assertFalse(app.contact().elementIsFound(By.cssSelector("h3")));
 
