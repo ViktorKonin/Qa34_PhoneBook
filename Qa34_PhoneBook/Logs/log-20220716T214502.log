@@ -1,0 +1,4 @@
+21:45:04.752 INFO  manager.ApplicationManager - All tests run in chrome browser
+21:45:05.768 INFO  manager.ApplicationManager - Current Url --->>>https://contacts-app.tobbymarshall815.vercel.app/home
+21:45:05.796 INFO  tests.TestBase - Start method with name -->removeOneContactSuccess
+21:45:12.070 INFO  manager.HelperBase - Count before remove is4

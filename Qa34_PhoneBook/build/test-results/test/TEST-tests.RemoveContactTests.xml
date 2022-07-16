@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.RemoveContactTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-07-16T18:48:58" hostname="VIKTOR" time="20.309">
+  <properties/>
+  <testcase name="removeAllContactsSuccess" classname="tests.RemoveContactTests" time="7.323"/>
+  <testcase name="removeOneContactSuccess" classname="tests.RemoveContactTests" time="0.581"/>
+  <system-out><![CDATA[21:48:40.545 INFO  tests.TestBase - Start method with name -->removeAllContactsSuccess
+21:49:05.564 INFO  tests.TestBase - Start method with name -->removeOneContactSuccess
+21:49:17.976 INFO  manager.HelperBase - Count before remove is3
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
